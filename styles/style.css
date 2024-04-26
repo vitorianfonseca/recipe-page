@@ -94,7 +94,7 @@ body {
     line-height: 150%;
     margin-left: -1.5rem;
     gap: 2rem;
-    padding:0.5rem 1.5rem 0.5rem;
+    padding:1rem 1.5rem 0.5rem;
 }
 
 /* INGREDIENTES SECTION */
@@ -118,7 +118,7 @@ body {
     line-height: 150%; /* 1.5rem */
     margin-left: -1.5rem;
     gap: 2rem;
-    padding:0.5rem 1.5rem 0.5rem;
+    padding:1rem 1.5rem 0.5rem;
 }
 
 /* INSTRUCOES SECTION */
@@ -247,189 +247,5 @@ body {
         padding: 0 2rem 2rem;
     }
     
-    /* INTRO SECTION */
-    
-    .intro img {
-        padding: 0;
-        width: 100%;
-        height: auto;
-        border-radius: 0.75rem;
-    }
-    
-    .intro h1 {
-        color: var(--Dark-Charcoal, #312E2C);
-        font-family: "Young Serif";
-        font-size: 2.5rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%; 
-        margin-top: 2.5rem;
-    }
-    
-    .intro p {
-        color: var(--Wenge-Brown, #5F564D);
-        font-family: Outfit;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; 
-        margin-top: 1.5rem;
-    }
-    
-    /* PREPARATION SECTION */
-    
-    .prep_time {
-        border-radius: 0.75rem;
-        background: var(--Snow);
-        padding: 1.75rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .prep_time h2 {
-        color: var(--Dark-Raspberry);
-        font-family: Outfit;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        margin-bottom: 1rem;
-    }
-    
-    .prep_time li {
-        color: var(--Wenge-Brown);
-        font-family: Outfit;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        margin-left: -1.5rem;
-        gap: 2rem;
-        padding:0.5rem 1.5rem 0.5rem;
-    }
-    
-    /* INGREDIENTES SECTION */
-    
-    .ingredientes h2 {
-        color: var(--Brandy-Red);
-        font-family: "Young Serif";
-        font-size: 1.75rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%; /* 1.75rem */
-        margin-bottom: 1.5rem;
-    }
-    
-    .ingredientes li {
-        color: var(--Wenge-Brown);
-        font-family: Outfit;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; /* 1.5rem */
-        margin-left: -1.5rem;
-        gap: 2rem;
-        padding:0.5rem 1.5rem 0.5rem;
-    }
-    
-    /* INSTRUCOES SECTION */
-    
-    .instrucoes h2 {
-        color: var(--Brandy-Red);
-        font-family: "Young Serif";
-        font-size: 1.75rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%; /* 1.75rem */
-        margin-top: 2rem;
-        border-top: 1px solid #E3DDD7;
-        padding-top: 2rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .instrucoes li {
-        color: var(--Wenge-Brown);
-        font-family: Outfit;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        list-style: none;
-        margin-top: 0.5rem;
-    }
-    
-    .number {
-        color: var(--Brandy-Red);
-        font-family: Outfit;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%; /* 1.5rem */
-        margin-left: -2rem;
-        margin-right: 1rem;
-    }
-    
-    /* NUTRICAO SECTION */
-    
-    .nutricao h2 {
-        color: var(--Brandy-Red, #854632);
-        font-family: "Young Serif";
-        font-size: 1.75rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%;
-        margin-top: 2rem;
-        padding-top: 2rem;
-        border-top: 1px solid #E3DDD7;
-    }
-    
-    .first {
-        color: var(--Wenge-Brown, #5F564D);
-        font-family: Outfit;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; 
-        margin-top: 1.5rem;
-    }
-    
-    .table {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1.5rem;
-    }
-    
-    .row {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid #E3DDD7;
-        padding-bottom: 0.75rem;
-        padding-top: 0.75rem;
-    }
-    
-    .row4 {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 0.75rem;
-    }
-    
-    .left {
-        margin-left: 5%;
-        color: var(--Wenge-Brown, #5F564D);
-        font-family: Outfit;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; 
-    }
-    
-    .right {
-        margin-right: 40%;
-        color: var(--Brandy-Red, #854632);
-        font-family: Outfit;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%;
-    }
+   
   }
