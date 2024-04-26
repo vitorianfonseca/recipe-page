@@ -1,116 +1,251 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>Recipe page</title>
-</head>
 
-<body>
+:root {
 
-  <div class="container">
-    <div class="card">
+    --Brandy-Red: #854632;
+    --Dark-Raspberry: hsl(332, 51%, 32%);
 
-      <img src="assets/images/image-omelette.jpeg" alt="foto-receita">
-      <div class="info">
-        <section class="intro">
-          <h1>Simple Omelette Recipe</h1>
-        <p class="intro">An easy and quick dish, perfect for any meal.
-          This classic omelette combines beaten eggs cooked 
-          to perfection, optionally filled with your choice 
-          of cheese, vegetables, or meats.</p>
-        </section>
+    --White: hsl(0, 0%, 100%);
+    --Snow: #FFF7FB;
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%)
+}
 
-        <section class="prep_time">
-            <h2>Preparation time</h2>
-            <ul>
-              <li><p><strong>Total:</strong>  Approximately 10 minutes</p></li>
-              <li><p><strong>Preparation:</strong> 5 minutes</p></li>
-              <li><p><strong>Cooking:</strong> 5 minutes</p></li>
-            </ul>
-      </section>
-      
-      <section class="ingredientes">
-          <h2>Ingredients</h3>
-          <ul>
-            <li><p>2-3 large eggs</p></li>
-            <li><p>Salt, to taste</p></li>
-            <li><p>Pepper, to taste</p></li>
-            <li><p>1 tablespoon of butter or oil</p></li>
-            <li><p>Optional fillings: cheese, diced vegetables, cooked meats, herbs</p></li>
-          </ul>
-      </section>
+body {
+    background: var(--Eggshell);
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
 
-      <section class="instrucoes">
-          <h2>Instructions</h3>
-          <ol>
-            <li><p>
-              <span class="number">1.</span><strong>Beat the eggs: </strong>In a bowl, beat the eggs with a pinch
-              of salt and pepper until they are well mixed. 
-              You can add a tablespoon of water or milk for a 
-              fluffier texture.
-            </p></li>
+}
 
-            <li><p>
-              <span class="number">2.</span><strong>Heat the pan:</strong> Place a non-stick frying pan over 
-              medium heat and add butter or oil.
-            </p></li>
+.container {
+    width: 46rem;
+    border-radius: 1.5rem;
+    background: var(--White, #FFF);
+    margin-left: auto;
+    margin-right: auto;
+}
 
-            <li><p>  
-              <span class="number">3.</span><strong>Cook the omelette:</strong> Once the butter
-              is melted and bubbling, pour in the eggs.
-              Tilt the pan to ensure 
-              the eggs evenly coat the surface.
-            </p></li>
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+}
 
-            <li><p> 
-              <span class="number">4.</span><strong>Add fillings (optional):</strong> When the eggs begin 
-              to set at the edges but are still slightly runny 
-              in the middle, sprinkle your chosen fillings over 
-              one half of the omelette.
-            </p></li>
+/* INTRO SECTION */
 
-            <li><p> 
-              <span class="number">5.</span><strong>Fold and serve: </strong>As the omelette continues to cook, 
-              carefully lift one edge and fold it over the 
-              fillings. Let it cook for another minute, then slide 
-              it onto a plate.
-            </p></li>
+.intro img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
 
-            <li><p>
-              <span class="number">6.</span><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.
-            </p></li>
-          </ol>
-      </section>
+.intro h1 {
+    color: var(--Dark-Charcoal, #312E2C);
+    font-family: "Young Serif";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    margin-top: 2.5rem;
+}
 
-      <section class="nutricao">
-        <h2>Nutrition</h2>
-        <p class="first">The table below shows nutritional values per serving without the additional fillings.</p>
-        <div class="table">
-            <div class="row">
-              <p class="left">Calories</p>
-              <p class="right">277Kcal</p>
-            </div>
-            <div class="row">
-              <p class="left">Carbs</p>
-              <p class="right">0g</p>
-            </div>
-            <div class="row">
-              <p class="left">Protein</p>
-              <p class="right">20g</p>
-            </div>
-            <div class="row4">
-              <p class="left">Fat</p>
-              <p class="right">22g</p>
-            </div>
-        </div>
-      </section>   
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+.intro p {
+    color: var(--Wenge-Brown, #5F564D);
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    margin-top: 1.5rem;
+}
+
+/* PREPARATION SECTION */
+
+.prep_time {
+    border-radius: 0.75rem;
+    background: var(--Snow);
+    padding: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.prep_time h2 {
+    color: var(--Dark-Raspberry);
+    font-family: Outfit;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 1rem;
+}
+
+.prep_time li {
+    color: var(--Wenge-Brown);
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-left: -1.5rem;
+    gap: 2rem;
+    padding:1rem 1.5rem 0.5rem;
+}
+
+/* INGREDIENTES SECTION */
+
+.ingredientes h2 {
+    color: var(--Brandy-Red);
+    font-family: "Young Serif";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 1.75rem */
+    margin-bottom: 1.5rem;
+}
+
+.ingredientes li {
+    color: var(--Wenge-Brown);
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.5rem */
+    margin-left: -1.5rem;
+    gap: 2rem;
+    padding:1rem 1.5rem 0.5rem;
+}
+
+/* INSTRUCOES SECTION */
+
+.instrucoes h2 {
+    color: var(--Brandy-Red);
+    font-family: "Young Serif";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 1.75rem */
+    margin-top: 2rem;
+    border-top: 1px solid #E3DDD7;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.instrucoes li {
+    color: var(--Wenge-Brown);
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.number {
+    color: var(--Brandy-Red);
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 1.5rem */
+    margin-left: -2rem;
+    margin-right: 1rem;
+}
+
+/* NUTRICAO SECTION */
+
+.nutricao h2 {
+    color: var(--Brandy-Red, #854632);
+    font-family: "Young Serif";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #E3DDD7;
+}
+
+.first {
+    color: var(--Wenge-Brown, #5F564D);
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    margin-top: 1.5rem;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E3DDD7;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+}
+
+.row4 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.75rem;
+}
+
+.left {
+    margin-left: 5%;
+    color: var(--Wenge-Brown, #5F564D);
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.right {
+    margin-right: 40%;
+    color: var(--Brandy-Red, #854632);
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+@media only screen and (max-width: 840px) {
+    body {
+      background-color: lightblue;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .container {
+        width: 100%;
+        background: var(--White, #FFF);
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .info {
+        padding: 0 2rem 2rem;
+    }
+    
+   
+  }
